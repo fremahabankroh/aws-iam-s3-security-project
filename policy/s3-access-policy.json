@@ -1,0 +1,29 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowS3Actions",
+			"Effect": "Allow",
+			"Action": [
+				"s3:ListBucket",
+				"s3:GetObject",
+				"s3:PutObject",
+				"s3:DeleteObject"
+			],
+			"Resource": [
+				"arn:aws:s3:::iam-s3-security-project-v2",
+				"arn:aws:s3:::iam-s3-security-project-v2/*"
+			]
+		},
+		{
+			"Sid": "DenyDangerousActions",
+			"Effect": "Deny",
+			"Action": [
+				"s3:DeleteBucket",
+				"s3:PutBucketPolicy",
+				"s3:PutBucketAcl"
+			],
+			"Resource": "arn:aws:s3:::iam-s3-security-project-v2"
+		}
+	]
+}

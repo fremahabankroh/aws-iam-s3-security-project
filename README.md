@@ -1,4 +1,4 @@
-<img width="984" height="1204" alt="IAM user created" src="https://github.com/user-attachments/assets/bdf3b791-00e9-4316-b942-73ba8292de04" /># aws-iam-s3-security-project
+
 Cloud security project: AWS IAM user creation, custom S3 bucket policies, and permission testing. Built for blue team portfolio.
 # AWS IAM + S3 Cloud Security Project
 
@@ -30,6 +30,8 @@ No permissions attached at creation (zero-trust starting point).
 ###Creation of Access key for s3-project-user
 CLI was the ideal pick
 Access keys were labeled with a description noting their purpose and scope — a real-world credential management practice that supports safe key rotation and audit trails.
+
+<img width="984" height="1204" alt="IAM user created" src="https://github.com/user-attachments/assets/bdf3b791-00e9-4316-b942-73ba8292de04" /># aws-iam-s3-security-project
 
 ### Enabled without MFA 
 In a production environment, MFA would be enforced on all IAM users. For this project it was intentionally left off to simplify testing, but enforcing MFA via an IAM policy condition would be the next hardening step

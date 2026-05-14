@@ -27,7 +27,7 @@ decisions made by cloud security and blue team engineers.
 ### Step 1 — Created an IAM user
 Created `s3-project-user` with console access only.
 No permissions attached at creation (zero-trust starting point).
-###Creation of Access key for s3-project-user
+### Creation of Access key for s3-project-user
 CLI was the ideal pick
 Access keys were labeled with a description noting their purpose and scope — a real-world credential management practice that supports safe key rotation and audit trails.
 

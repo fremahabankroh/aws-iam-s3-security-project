@@ -87,7 +87,7 @@ Each policy statement has Effect, Action, and Resource...
 - Replace IAM user access keys with IAM roles...
 
 ## Tools used
-AWS IAM · AWS S3 · AWS Console · JSON
+AWS IAM · AWS S3 · AWS Console · JSON · VSCODE
 
 ---
 ⚠️ No credentials, access keys, or sensitive data are stored in this repo.

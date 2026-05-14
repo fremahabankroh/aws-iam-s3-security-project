@@ -20,7 +20,8 @@ decisions made by cloud security and blue team engineers.
 
 ## Architecture
 
-![Architecture diagram](docs/architecture-diagram.png)
+.<img width="1362" height="1782" alt="architecture-diagram png drawio" src="https://github.com/user-attachments/assets/c3cea73f-a472-4117-b3e3-a4d870892308" />
+
 
 ## What I built — step by step
 
@@ -29,9 +30,7 @@ Created `s3-project-user` with console access only.
 No permissions attached at creation (zero-trust starting point).
 ### Creation of Access key for s3-project-user
 CLI was the ideal pick
-Access keys were labeled with a description noting their purpose and scope — a real-world credential management practice that supports safe key rotation and audit trails.
-
-<img width="984" height="1204" alt="IAM user created" src="https://github.com/user-attachments/assets/bdf3b791-00e9-4316-b942-73ba8292de04" /># aws-iam-s3-security-project
+Access keys were labeled with a description noting their purpose and scope — a real-world credential management practice that supports safe key rotation and audit trails
 
 ### Enabled without MFA 
 In a production environment, MFA would be enforced on all IAM users. For this project it was intentionally left off to simplify testing, but enforcing MFA via an IAM policy condition would be the next hardening step
